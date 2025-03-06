@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carcasa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: auto;
+  background-color: rgba(1, 1, 15, 0.621);
+  box-shadow: 1px 2px 6px black;
+  border-radius: 10px;
+  margin: 200px auto;
+  border: 1px solid rgba(210, 213, 37, 0.923);
+  padding: 10px;
+  gap: 10px;
+}
+
+#display {
+  width: 97%;
+  height: 80px;
+  text-align: right;
+  font-size: 20px;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: inset 2px 2px 4px black;
+}
+
+#numeros-calculadora {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(222, 217, 217, 0.441);
+  box-shadow: 1px 2px 6px black;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.top-buttons {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 6px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.botones-operador {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 5px;
+}
+
+#boton-mas {
+  background-color: rgba(26, 22, 22, 0.87);
+  color: white;
+  font-size: 30px;
+}
+#boton-menos {
+  background-color: rgba(26, 22, 22, 0.87);
+  color: white;
+  font-size: 30px;
+}
+#boton-multiplicar {
+  background-color: rgba(26, 22, 22, 0.87);
+  color: white;
+  font-size: 30px;
+}
+#boton-dividir {
+  background-color: rgba(26, 22, 22, 0.87);
+  color: white;
+  font-size: 30px;
+}
+
+#boton-porcentaje {
+  background-color: rgba(26, 22, 22, 0.87);
+  color: white;
+  font-size: 30px;
+}
+
+.numeros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  grid-column: span 4;
+}
+
+#boton-resultado {
+  grid-column: span 4;
+  font-size: 30px;
+  background-color: white;
+  box-shadow: 1px 2px 6px black;
+  transition: transform 0.3s;
+}
+
+#boton-resultado:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
+
+#boton-resultado:active {
+  transform: scale(1.02) translateY(2px);
+  box-shadow: 0px 1px 4px black;
+}
+
+button {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 2px 6px black;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(1.02) translateY(2px);
+  box-shadow: 0px 1px 4px black;
+}
+
+#boton-on {
+  background-color: rgba(210, 213, 37, 0.923);
+}
+#boton-off {
+  background-color: rgba(210, 213, 37, 0.923);
+}
+#boton-del {
+  background-color: rgba(210, 213, 37, 0.923);
+}
