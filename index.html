@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="calculadora.js"></script>
+  </head>
+  <body>
+    <div class="carcasa">
+      <div id="display">
+        <p id="primer-operando"></p>
+        <p id="segundo-operando"></p>
+        <p id="operador"></p>
+      </div>
+
+      <div id="numeros-calculadora">
+        <div class="top-buttons">
+          <button id="boton-on">ON</button>
+          <button id="boton-del">DEL</button>
+          <button id="boton-off">OFF</button>
+        </div>
+        <div class="botones-operador">
+          <button class="operador" id="boton-mas">+</button>
+          <button class="operador" id="boton-menos">-</button>
+          <button class="operador" id="boton-multiplicar">*</button>
+          <button class="operador" id="boton-dividir">/</button>
+          <button class="operador" id="boton-porcentaje">%</button>
+        </div>
+
+        <div class="numeros">
+          <button class="numero">1</button>
+          <button class="numero">2</button>
+          <button class="numero">3</button>
+          <button class="numero">4</button>
+          <button class="numero">5</button>
+          <button class="numero">6</button>
+          <button class="numero">7</button>
+          <button class="numero">8</button>
+          <button class="numero">9</button>
+          <button class="numero">.</button>
+          <button class="numero">0</button>
+          <button class="numero">00</button>
+        </div>
+        <button id="boton-resultado">=</button>
+      </div>
+    </div>
+    <p id="resultado"></p>
+  </body>
+</html>
